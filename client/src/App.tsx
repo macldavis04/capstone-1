@@ -1,5 +1,11 @@
+import { Routes, Route } from "react-router-dom";
+
 function App() {
-  return <h1>Deloitte React Project</h1>;
+  return (
+    <Routes>
+      <Route path="/" element={<h1 className="page">Spoonful</h1>} />
+    </Routes>
+  );
 }
 
 export default App;
