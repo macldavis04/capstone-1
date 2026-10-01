@@ -1,10 +1,18 @@
+// src/App.tsx
 import { Routes, Route } from "react-router-dom";
+import Header from "./components/header/header";
+import LandingPage from "./pages/landingPage/landingPage";
+import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<h1 className="page">Spoonful</h1>} />
-    </Routes>
+    <>
+      <Header />
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="*" element={<NotFoundPage />} />
+      </Routes>
+    </>
   );
 }
 

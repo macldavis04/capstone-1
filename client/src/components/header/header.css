@@ -1,0 +1,49 @@
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 16px 24px;
+  background-color: var(--cream);
+  border-bottom: 2px solid var(--neutral-300);
+}
+
+.app-header-logo {
+  text-decoration: none;
+}
+
+.app-nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.app-nav a {
+  color: var(--green-400);
+  text-decoration: none;
+}
+
+.app-nav a:hover {
+  color: var(--green-200);
+}
+
+.app-nav a.active {
+  text-decoration: underline;
+}
+
+.app-nav button {
+  padding: 0;
+}
+
+@media (max-width: 600px) {
+  .app-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .app-nav {
+    gap: 14px;
+  }
+}

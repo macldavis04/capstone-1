@@ -69,3 +69,95 @@ p {
   margin: 0 auto;
   padding: 32px 16px;
 }
+
+a {
+  color: var(--green-400);
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: var(--green-200);
+}
+
+a:focus-visible {
+  outline: 2px solid var(--green-300);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+button,
+.btn {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-primary {
+  background-color: var(--green-300);
+  color: var(--neutral-100);
+}
+
+.btn-primary:hover {
+  background-color: var(--green-200);
+}
+
+.btn-secondary {
+  background-color: var(--cream);
+  color: var(--green-300);
+  border-color: var(--green-300);
+}
+
+.btn-secondary:hover {
+  color: var(--green-200);
+  border-color: var(--green-200);
+}
+
+.btn-text {
+  background: none;
+  color: var(--green-300);
+  padding: 12px 8px;
+}
+
+.btn-text:hover {
+  color: var(--green-200);
+}
+
+button:focus-visible,
+.btn:focus-visible {
+  outline: 2px solid var(--green-300);
+  outline-offset: 2px;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  :root {
+    font-size: 18px;
+  }
+
+  .body-sm {
+    font-size: 14px;
+  }
+}
