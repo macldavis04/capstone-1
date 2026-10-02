@@ -8,7 +8,8 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "test": "vitest"
+    "test": "vitest",
+    "deploy": "npm run build && aws s3 sync dist/ s3://maclaren-spoonful-capstone --delete"
   },
   "dependencies": {
     "axios": "^1.20.0",
