@@ -10,6 +10,8 @@ import RecipeDetailPage from "./pages/RecipeDetailPage/RecipeDetailPage";
 import DashboardPage from "./pages/DashboardPage/DashboardPage";
 import NewRecipePage from "./pages/NewRecipePage/NewRecipePage";
 import EditRecipePage from "./pages/EditRecipePage/EditRecipePage";
+import AIAssistantPage from "./pages/AIAssistantPage/AIAssistantPage";
+import RecipeIdeasPage from "./pages/RecipeIdeasPage/RecipeIdeasPage";
 import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 
 function App() {
@@ -21,6 +23,8 @@ function App() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/signup" element={<SignupPage />} />
         <Route path="/recipes" element={<RecipesPage />} />
+        <Route path="/ai-assistant" element={<AIAssistantPage />} />
+        <Route path="/recipe-ideas" element={<RecipeIdeasPage />} />
 
         <Route
           path="/dashboard"
