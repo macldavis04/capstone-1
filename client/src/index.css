@@ -161,3 +161,38 @@ button:disabled {
     font-size: 14px;
   }
 }
+
+/* Inputs */
+label {
+  display: block;
+  font-weight: 700;
+  color: var(--neutral-500);
+  margin-bottom: 6px;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: 16px;
+  width: 100%;
+  padding: 12px 16px;
+  border: 2px solid var(--neutral-400);
+  border-radius: 8px;
+  background-color: var(--neutral-100);
+  color: var(--neutral-600);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--neutral-400);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid var(--green-300);
+  outline-offset: 2px;
+  border-color: var(--neutral-600);
+  background-color: var(--cream);
+}

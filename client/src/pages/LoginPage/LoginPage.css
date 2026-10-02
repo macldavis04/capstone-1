@@ -1,0 +1,29 @@
+.auth-page {
+  display: flex;
+  justify-content: center;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 440px;
+  background-color: var(--cream);
+  border: 2px solid var(--neutral-300);
+  border-radius: 12px;
+  padding: 32px;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.auth-form .form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-switch {
+  margin: 20px 0 0;
+  text-align: center;
+}

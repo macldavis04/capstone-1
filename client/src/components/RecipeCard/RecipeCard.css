@@ -1,0 +1,84 @@
+.recipe-card {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid var(--neutral-300);
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: var(--cream);
+}
+
+.recipe-card-image-link {
+  display: block;
+  line-height: 0;
+}
+
+.recipe-card-image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  background-color: var(--neutral-200);
+}
+
+.recipe-card-image[src="/logo.svg"] {
+  object-fit: contain;
+  padding: 32px;
+}
+
+.recipe-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px;
+  flex: 1;
+}
+
+.recipe-card-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.recipe-card-title a {
+  color: var(--neutral-600);
+  text-decoration: none;
+}
+
+.recipe-card-title a:hover {
+  color: var(--green-400);
+}
+
+.recipe-card-date {
+  font-style: italic;
+  margin: 0;
+}
+
+.recipe-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.recipe-card-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  margin-top: auto;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  padding: 4px;
+  color: var(--green-300);
+  display: inline-flex;
+  line-height: 0;
+}
+
+.icon-button svg {
+  width: 28px;
+  height: 28px;
+}
+
+.icon-button:hover {
+  color: var(--green-200);
+}

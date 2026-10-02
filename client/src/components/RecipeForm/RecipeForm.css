@@ -1,0 +1,54 @@
+.recipe-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 720px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-list {
+  border: 2px solid var(--neutral-300);
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-list legend {
+  font-weight: 700;
+  padding: 0 8px;
+}
+
+.form-row {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.form-row input {
+  flex: 1;
+}
+
+.step-number {
+  font-weight: 700;
+  min-width: 24px;
+}
+
+.form-list .btn-secondary {
+  align-self: flex-start;
+}
+
+@media (max-width: 600px) {
+  .form-row {
+    flex-wrap: wrap;
+  }
+
+  .form-row input {
+    flex: 1 1 100%;
+  }
+}

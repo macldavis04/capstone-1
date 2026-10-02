@@ -1,9 +1,11 @@
-// src/pages/LandingPage/LandingPage.tsx
 import { Link } from "react-router-dom";
-import Logo from "../../components/logo/logo";
-import "./landingPage.css";
+import { useUser } from "../../contexts/UserContext";
+import Logo from "../../components/Logo/Logo";
+import "./LandingPage.css";
 
 function LandingPage() {
+  const { user } = useUser();
+
   return (
     <main className="landing">
       <div className="landing-logo">
@@ -18,9 +20,15 @@ function LandingPage() {
         <Link to="/recipes" className="btn btn-primary">
           Explore Recipes
         </Link>
-        <Link to="/login" className="btn btn-secondary">
-          Login
-        </Link>
+        {user ? (
+          <Link to="/dashboard" className="btn btn-secondary">
+            Go to Dashboard
+          </Link>
+        ) : (
+          <Link to="/login" className="btn btn-secondary">
+            Login
+          </Link>
+        )}
       </div>
     </main>
   );
